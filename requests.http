@@ -1,0 +1,16 @@
+@springBaseUrl = http://localhost
+@springPort = 8080
+@springUrl = {{springBaseUrl}}:{{springPort}}
+@apiBookStore = {{springUrl}}/api/bookstore
+
+###
+
+GET {{apiBookStore}}/books
+
+###
+
+POST {{apiBookStore}}/books
+
+{
+   "title": "Effective Java"
+}
